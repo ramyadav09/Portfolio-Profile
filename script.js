@@ -15,6 +15,16 @@ cross.addEventListener("click", () => {
   menu_list.classList.toggle("-translate-x-full");
   console.log("i am clicked");
 });
+let lists = document.querySelectorAll(".lists");
+lists.forEach((click) => {
+  click.addEventListener("click", () => {
+    hamburger.classList.toggle("-translate-x-96");
+    cross.classList.remove("-translate-y-12");
+    cross.classList.add("-translate-y-96");
+    menu_list.classList.toggle("-translate-x-full");
+    // console.log("i am clicked");
+  });
+});
 
 var typed = new Typed(".web-dev", {
   strings: ["Web Developer", "Student"],
