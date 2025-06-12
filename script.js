@@ -71,13 +71,11 @@ function contactfun() {
 
 var typed = new Typed(".web-dev", {
   strings: [
-    "Frontend Developer",
     "Web Designer",
-    "JavaScript Enthusiast",
     "CSE Student",
   ],
-  typeSpeed: 50,
-  backSpeed: 50,
+  typeSpeed: 75,
+  backSpeed: 75,
   backDelay: 500,
   loop: true,
 });
