@@ -36,27 +36,27 @@
           class="flex flex-col md:flex-row md:text-lg lg:text-2xl items-center space-y-4 m-2 sm:space-x-1 md:space-y-0 md:flex lg:space-x-2 xl:space-x-6"
         >
           <li
-            class="lists py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:hover:text-purple-300 md:border-none"
+            class="lists home text-purple-300 py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:border-none"
           >
             <a href="#home"> Home </a>
           </li>
           <li
-            class="lists py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:hover:text-purple-300 md:border-none"
+            class="lists about about py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:border-none"
           >
             <a href="#about"> About </a>
           </li>
           <li
-            class="lists py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:hover:text-purple-300 md:border-none"
+            class="lists skills py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:border-none"
           >
             <a href="#skills"> Skills </a>
           </li>
           <li
-            class="lists py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:hover:text-purple-300 md:border-none"
+            class="lists portfolio py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:border-none"
           >
             <a href="#portfolio"> Portfolio </a>
           </li>
           <li
-            class="lists py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:hover:text-purple-300 md:border-none"
+            class="lists contact py-1 hover:border hover:border-1 hover:border-gray-200 rounded-lg px-2 cursor-pointer md:border-none"
           >
             <a href="#contact"> Contact </a>
           </li>
@@ -75,7 +75,7 @@
     <main
       class="flex flex-col justify-center items-center absolute top-12 md:w-11/12"
     >
-      <section id="home">
+      <section id="home" onmouseenter="homefun()">
         <!-- border-2 border-red-600 -->
         <div
           class="flex relative flex-col h-[42rem] xl:h-[40rem] md:flex-row space-y-4 md:space-x-24 z-30 md:-top-8 lg:top-2 justify-center items-center md:items-start"
@@ -155,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section id="about">
+      <section id="about" onmouseenter="aboutfun()">
         <div
           class="h-[42rem] xl:h-[41rem] flex flex-col md:flex-row space-y-4 z-30 md:-top-8 w-full lg:top-42 justify-center items-center md:items-start pt-4"
         >
@@ -197,7 +197,7 @@
         </div>
       </section>
 
-      <section id="skills" class="w-5/6">
+      <section id="skills" class="w-5/6" onmouseenter="skillsfun()">
         <div class="flex flex-col my-12 space-y-4">
           <div class="flex items-center justify-center md:justify-start w-full">
             <h2
@@ -362,7 +362,7 @@
         </div>
       </section>
 
-      <section id="portfolio" class="w-5/6">
+      <section id="portfolio" class="w-5/6" onmouseenter="portfoliofun()">
         <div class="flex flex-col my-12">
           <div class="flex items-center justify-center">
             <h2
@@ -375,7 +375,7 @@
             class="projects flex flex-col md:flex-row md:flex-wrap justify-center items-center py-4"
           >
             <div
-              class="pr1 h-[20rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
+              class="pr1 h-[24rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
             >
               <div class="flex justify-center w-full items-center">
                 <img
@@ -399,7 +399,7 @@
               </ul>
             </div>
             <div
-              class="pr2 h-[20rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
+              class="pr2 h-[24rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
             >
               <div class="flex justify-center w-full items-center">
                 <img
@@ -424,7 +424,7 @@
               </ul>
             </div>
             <div
-              class="pr3 h-[20rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
+              class="pr3 h-[24rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
             >
               <div class="flex justify-center w-full items-center">
                 <img
@@ -446,7 +446,7 @@
               </ul>
             </div>
             <div
-              class="pr4 h-[20rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
+              class="pr4 h-[24rem] lg:h-[27rem] xl:h-[29rem] hover:scale-[1.02] transition-transform duration-300 bg-[#232a45] flex flex-col w-[75%] md:w-[45%] space-y-2 p-4 m-2 rounded-md"
             >
               <div class="flex justify-center w-full items-center">
                 <img
@@ -476,7 +476,8 @@
 
       <section
         id="contact"
-        class="w-4/5 md:w-5/6 mx-auto text-lg mt-1 mb-4 md:text-base lg:text-2xl"
+        class="w-4/5 md:w-5/6 mx-auto text-lg mt-2 mb-4 md:text-base lg:text-2xl"
+        onmouseenter="contactfun()"
       >
         <div class="text-center mb-8">
           <h2
@@ -534,7 +535,7 @@
         </form>
 
         <div class="text-center mt-6">
-          <a class="text-[rgb(192,132,252)]" href="mailto:24052545@kiit.ac.in"
+          <a class="text-blue-300" href="mailto:24052545@kiit.ac.in"
             >24052545@kiit.ac.in</a
           >
         </div>
@@ -573,9 +574,7 @@
           </a>
         </div>
         <div class="flex justify-center mt-4">
-          <p class="md:text-lg lg:text-xl xl:text-2xl">
-            Ram Kumar Yadav
-          </p>
+          <p class="md:text-lg lg:text-xl xl:text-2xl">Ram Kumar Yadav</p>
         </div>
       </section>
     </main>
